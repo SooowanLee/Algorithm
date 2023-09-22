@@ -11,34 +11,53 @@ public class P3052 {
         /**
          * 나머지
          */
-        //배열을 사용한 방법
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        boolean[] arr = new boolean[42];
-//
-//        for (int i = 0; i < 10; i++) {
-//            arr[Integer.parseInt(br.readLine()) % 42] = true;
-//        }
-//
-//        int count = 0;
-//        for (boolean value : arr) {
-//            if (value) {
-//                count++;
-//            }
-//        }
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //배열을 사용한 방법1
+       /* int[] arr = new int[10];
+        boolean bl;
+        int count = 0;
 
-//        System.out.println(count);
-
-
-        //HashSet을 사용한 방법
-        //중복이 안되는 특성을 이용하여 서로 다른 숫자를 저장하고 갯수를 세기 좋다
-        Scanner sc = new Scanner(System.in);
-        HashSet<Integer> h = new HashSet<>();
-
-        for (int i = 0; i < 10; i++) {
-            h.add(sc.nextInt() % 42);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = Integer.parseInt(br.readLine()) % 42;
         }
 
-        sc.close();
-        System.out.println(h.size());
+        for (int i = 0; i < arr.length; i++) {
+            bl = false;
+
+            for (int k = i + 1; k < arr.length; k++) {
+                if (arr[i] == arr[k]) {
+                    bl = true;
+                    break;
+                }
+            }
+            if (!bl) {
+                count++;
+            }
+        }
+        System.out.println(count);*/
+
+        //배열을 사용한 방법2
+      /*  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        boolean[] arr = new boolean[42];
+
+        for (int i = 0; i < 10; i++) {
+            arr[Integer.parseInt(br.readLine()) % 42] = true;
+        }
+
+        int count = 0;
+        for (boolean value : arr) {
+            if (value) {
+                count++;
+            }
+        }
+
+        System.out.println(count);*/
+
+        //HashSet사용
+        HashSet<Integer> hashSet = new HashSet<>();
+        for (int i = 0; i < 10; i++) {
+            hashSet.add(Integer.parseInt(br.readLine()) % 42);
+        }
+        System.out.print(hashSet.size());
     }
 }
