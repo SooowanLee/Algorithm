@@ -1,4 +1,4 @@
-package com.example.algorithm.baekjoon.string_ex;
+package com.example.algorithm.baekjoon.string;
 
 import java.util.Scanner;
 
