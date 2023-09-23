@@ -19,6 +19,7 @@ public class P10811 {
         int M = Integer.parseInt(st.nextToken());
         int temp = 0;
 
+
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
         }
@@ -38,7 +39,6 @@ public class P10811 {
                 J--;
             }
         }
-
         for (int k : arr) {
             System.out.print(k + " ");
         }
