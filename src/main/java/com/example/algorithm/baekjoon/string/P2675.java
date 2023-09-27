@@ -13,26 +13,29 @@ public class P2675 {
          * S에는 QR Code "alphanumeric" 문자만 들어있다.
          * QR Code "alphanumeric" 문자는 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\$%*+-./: 이다.
          */
-
-        //BufferedReader() + split()
-        /*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //BufferedReader() + split() + charAt()
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
 
         for (int i = 0; i < T; i++) {
             String[] str = br.readLine().split(" ");
             int R = Integer.parseInt(str[0]);
             String S = str[1];
-
+            
+            //입력받은 문자열 끝까지 돌면서 R만큼 반복한다.
             for (int j = 0; j < S.length(); j++) {
                 for (int k = 0; k < R; k++) {
-                    System.out.print(S.charAt(j));
+                    System.out.print(S.charAt(j)); //문자열을 순회하기 때문에 j를 파라미터로 준다.
                 }
             }
             System.out.println();
-        }*/
+        }
+
+
+
 
         //BufferedReader() + StringBuilder() + getBytes()
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        /*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
 
         int T = Integer.parseInt(br.readLine());
@@ -49,6 +52,6 @@ public class P2675 {
             }
             sb.append(System.lineSeparator());
         }
-        System.out.print(sb);
+        System.out.print(sb);*/
     }
 }
