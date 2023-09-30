@@ -16,12 +16,10 @@ public class P5622 {
         //BufferedReader() + switch-case
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
-
         int count = 0;
         int k = s.length();
 
         for (int i = 0; i < k; i++) {
-
             switch (s.charAt(i)) {
                 case 'A':
                 case 'B':
@@ -74,6 +72,7 @@ public class P5622 {
                     break;
             }
         }
+
         System.out.println(count);
 
         /*//System.in + if-else
