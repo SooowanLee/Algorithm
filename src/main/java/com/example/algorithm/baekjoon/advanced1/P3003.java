@@ -12,19 +12,20 @@ public class P3003 {
          */
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int[] requiredPieces = {1, 1, 2, 2, 2, 8};
-        int[] playerPieces = new int[6];
-
-        for (int i = 0; i < playerPieces.length; i++) {
-            playerPieces[i] = Integer.parseInt(st.nextToken());
-        }
-
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < 6; i++) {
-            int difference = requiredPieces[i] - playerPieces[i];
-            sb.append(difference).append(" ");
+        int[] original = {1, 1, 2, 2, 2, 8};
+        int[] current = new int[6];
+
+        for (int i = 0; i < current.length; i++) {
+            current[i] = Integer.parseInt(st.nextToken());
         }
-        System.out.println(sb);
+
+        for (int i = 0; i < 6; i++) {
+            int different = original[i]- current[i];
+            sb.append(different).append(" ");
+        }
+
+        System.out.print(sb);
     }
 }
