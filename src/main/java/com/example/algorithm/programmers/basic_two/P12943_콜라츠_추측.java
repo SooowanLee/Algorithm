@@ -8,15 +8,24 @@ public class P12943_콜라츠_추측 {
     }
 
     class Solution {
-
-
         public static int solution(int num) {
-            int answer = num;
+            long answer = num; //오버플로우 방지를 위해 long 사용
             int count = 0;
 
+            while (answer != 1) {
+                count++;
+                if (answer % 2 == 0) {
+                    answer /= 2;
+                } else {
+                    answer = answer * 3 + 1;
+                }
+            }
 
+            if (count >= 500) {
+                return -1;
+            }
 
-            return answer;
+            return count;
         }
     }
 }
