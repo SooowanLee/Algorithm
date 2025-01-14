@@ -27,6 +27,15 @@ public class P120912_7의_개수 {
             }
 
             return answer;
+
+            //Stream API를 사용한 풀이
+           /* return (int) Arrays.stream(Arrays.stream(array)
+                            .mapToObj(String::valueOf)
+                            .collect(Collectors.joining())
+                            .split(""))
+                    .filter(s -> s.equals("7"))
+                    .count();*/
+
         }
     }
 
