@@ -1,5 +1,7 @@
 package com.example.algorithm.programmers.basic_two;
 
+import java.util.Stack;
+
 public class P120853_컨트롤_제트 {
     public static void main(String[] args) {
         System.out.println(Solution.solution("1 2 Z 3"));
@@ -17,7 +19,7 @@ public class P120853_컨트롤_제트 {
     class Solution {
         public static int solution(String s) {
             int answer = 0;
-            int prev = 0;
+           /* int prev = 0;
 
             String[] parts = s.split(" ");
 
@@ -29,6 +31,21 @@ public class P120853_컨트롤_제트 {
                 } else {
                     answer -= prev;
                 }
+            }*/
+
+            //Stack 사용
+            Stack<Integer> stack = new Stack<>();
+
+            for (String w : s.split(" ")) {
+                if (w.equals("Z")) {
+                    stack.pop();
+                } else {
+                    stack.push(Integer.parseInt(w));
+                }
+            }
+
+            for (int i : stack) {
+                answer += i;
             }
 
             return answer;
