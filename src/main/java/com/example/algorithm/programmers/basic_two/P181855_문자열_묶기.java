@@ -1,6 +1,7 @@
 package com.example.algorithm.programmers.basic_two;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class P181855_문자열_묶기 {
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class P181855_문자열_묶기 {
     /**
      * 주어진 문자열 배열에서 각 문자열의 길이를 기준으로 개수를 세고,
      * 가장 많이 등장한 문자열 길이의 개수를 반환하는 함수.
-     *
+     * <p>
      * 동작 원리:
      * 1. Map<Integer, Integer>를 사용해 <문자열 길이, 등장 횟수>를 저장.
      * 2. 문자열 배열을 순회하며 각 문자열의 길이를 키로 하여 Map에 저장하거나, 기존 값을 증가시킴.
@@ -18,7 +19,7 @@ public class P181855_문자열_묶기 {
      */
     class Solution {
         public static int solution(String[] strArr) {
-          int answer = 0;
+            int answer = 0;
             Map<Integer, Integer> lengthCount = new HashMap<>();
 
             for (String s : strArr) {
