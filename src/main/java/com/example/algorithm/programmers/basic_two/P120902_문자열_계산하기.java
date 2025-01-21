@@ -13,7 +13,6 @@ public class P120902_문자열_계산하기 {
             for (int i = 1; i < parts.length; i += 2) {
                 String operation = parts[i];
                 int num = Integer.parseInt(parts[i + 1]);
-
                 if (operation.equals("+")) {
                     answer += num;
                 } else if (operation.equals("-")) {
