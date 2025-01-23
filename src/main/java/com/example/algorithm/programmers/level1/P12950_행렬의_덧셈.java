@@ -8,6 +8,9 @@ public class P12950_행렬의_덧셈 {
         System.out.println(Arrays.deepToString(Solution.solution(new int[][]{{1}, {2}}, new int[][]{{3}, {4}})));
     }
 
+    /**
+     * 행렬을 돌아가면서 더해준다.
+     */
     class Solution {
         public static int[][] solution(int[][] arr1, int[][] arr2) {
             int[][] answer = {};
