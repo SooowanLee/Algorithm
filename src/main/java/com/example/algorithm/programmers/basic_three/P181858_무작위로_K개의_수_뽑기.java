@@ -10,20 +10,20 @@ public class P181858_무작위로_K개의_수_뽑기 {
 
     class Solution {
         public static int[] solution(int[] arr, int k) {
-            Set<Integer> uniqueNumbers = new HashSet<>(); // 중복 제거 역할
-            List<Integer> numList = new ArrayList<>(); // 결과 저장 역할
+            Set<Integer> uniqueNumber = new HashSet<>(); // 중복 제거 역할
+            List<Integer> resultList = new ArrayList<>(); // 결과 저장 역할
 
             for (int num : arr) {
-                if (uniqueNumbers.size() < k && uniqueNumbers.add(num)) { // 중복이 아니면서 k개 보다 작을 때
-                    numList.add(num);
+                if (uniqueNumber.size() < k && uniqueNumber.add(num)) {
+                    resultList.add(num);
                 }
             }
 
-
             int[] answer = new int[k];
-            Arrays.fill(answer, -1); // 배열을 -1로 초기화
-            for (int i = 0; i < numList.size(); i++) {
-                answer[i] = numList.get(i); //List의 값을 배열에 할당
+            Arrays.fill(answer, -1); //배열을 -1로 초기화
+
+            for (int i = 0; i < resultList.size(); i++) {
+                answer[i] = resultList.get(i);
             }
 
             return answer;
