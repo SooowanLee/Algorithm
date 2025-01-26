@@ -14,10 +14,13 @@ public class P181830_정사각형으로_만들기 {
             int rowCount = arr.length;
             int columnCount = arr[0].length;
 
+            // 행과 열 중 더 큰 값을 추출
             int newSize = Math.max(rowCount, columnCount);
 
+            // 정사각형이기 때문에 행과 열의 값이 같다.
             int[][] answer = new int[newSize][newSize];
 
+            // 행의 길이를 돌면서 열의 길이로 값을 초기화 그럼 정사각형이 완성된다.
             for (int i = 0; i < rowCount; i++) {
                 System.arraycopy(arr[i], 0, answer[i], 0, columnCount);
             }
