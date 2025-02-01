@@ -9,9 +9,10 @@ public class P120869_외계어_사전2 {
 
     class Solution {
         public static int solution(String[] spell, String[] dic) {
-            int count = 0;
+            int answer = 2;
 
             for (int i = 0; i < dic.length; i++) {
+                int count = 0;
                 for (int j = 0; j < spell.length; j++) {
                     if (dic[i].contains(spell[j])) {
                         count++;
@@ -19,11 +20,11 @@ public class P120869_외계어_사전2 {
                 }
 
                 if (count == spell.length) {
-                    return 1;
+                    answer = 1;
                 }
             }
 
-            return 2;
+            return answer;
         }
     }
 }
