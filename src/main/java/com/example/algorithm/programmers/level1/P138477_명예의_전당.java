@@ -20,7 +20,7 @@ public class P138477_명예의_전당 {
              * 2. list의 개수가 k를 넘는 순간 마지막 index 제거
              * 3. answer에 list의 마지막 index(최하위 점수) 저장
              */
-      /*      for (int i = 0; i < score.length; i++) {
+            for (int i = 0; i < score.length; i++) {
                 list.add(score[i]); // 명예의 전당에 점수 추가
                 Collections.sort(list, Collections.reverseOrder()); // 내림차순 정렬
 
@@ -29,7 +29,7 @@ public class P138477_명예의_전당 {
                 }
 
                 answer[i] = list.get(list.size() - 1); // 최하위 점수 저장
-            }*/
+            }
 
 
             //Queue
