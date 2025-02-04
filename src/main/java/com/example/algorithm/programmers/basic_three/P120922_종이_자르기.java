@@ -9,11 +9,10 @@ public class P120922_종이_자르기 {
 
     class Solution {
         public static int solution(int M, int N) {
-            int answer = 0;
+//            (M - 1) + (N - 1) * M;
 
-
-
-            return answer;
+            // M * N 으로 최종 조각을 만들고 원래 있던 1조각을 빼면 가위질 횟수가 나온다.
+            return M * N - 1;
         }
     }
 }
