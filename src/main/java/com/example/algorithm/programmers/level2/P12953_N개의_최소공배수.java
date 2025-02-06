@@ -17,7 +17,7 @@ public class P12953_N개의_최소공배수 {
             return answer;
         }
 
-        // 최대 공약수
+        // 최대 공약수(유클리드 알고리즘)
         public static int gcd(int a, int b) {
             //b가 0이 될 때까지 a와 b의 값을 갱신
             while (b != 0) {
