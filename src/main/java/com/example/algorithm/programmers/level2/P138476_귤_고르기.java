@@ -17,7 +17,6 @@ public class P138476_귤_고르기 {
     class Solution {
         public static int solution(int k, int[] tangerine) {
 
-
             // 1. 귤 크기 별 개수 세기
             Map<Integer, Integer> countMap = new HashMap<>();
             for (int size : tangerine) {
