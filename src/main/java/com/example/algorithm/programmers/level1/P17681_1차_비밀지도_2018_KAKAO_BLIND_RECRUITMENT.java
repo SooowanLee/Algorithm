@@ -10,8 +10,7 @@ public class P17681_1차_비밀지도_2018_KAKAO_BLIND_RECRUITMENT {
         public static String[] solution(int n, int[] arr1, int[] arr2) {
             String[] answer = {};
 
-
-
+            
 
             return answer;
         }
