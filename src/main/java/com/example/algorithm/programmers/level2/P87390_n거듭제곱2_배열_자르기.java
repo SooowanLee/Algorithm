@@ -1,10 +1,10 @@
-package com.example.algorithm.programmers.level2.P87390_n;
+package com.example.algorithm.programmers.level2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class n거듭제곱2_배열_자르기 {
+public class P87390_n거듭제곱2_배열_자르기 {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(Solution.solution(3, 2, 5)));
         System.out.println(Arrays.toString(Solution.solution(4, 7, 14)));
