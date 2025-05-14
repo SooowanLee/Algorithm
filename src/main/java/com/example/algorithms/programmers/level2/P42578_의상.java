@@ -20,7 +20,7 @@ public class P42578_의상 {
 
             // 경우의 수 계산 (각 종류별로 안 입는 경우 포함하여 곱하기)
             int answer = 1;
-            for (Integer count : map.values()) {
+            for (Integer count : map.values()){
                 answer *= (count + 1); // 안 입는 경우 포함
             }
 

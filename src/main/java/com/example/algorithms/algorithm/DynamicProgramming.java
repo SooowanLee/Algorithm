@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class DynamicProgramming {
     public static void main(String[] args) {
-        System.out.println(TopDown.fib(10));
+        System.out.println(TopDown.fib(3));
         System.out.println(BottomUp.fib(10));
     }
 
