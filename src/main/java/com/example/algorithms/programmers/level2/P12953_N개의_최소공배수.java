@@ -26,6 +26,11 @@ public class P12953_N개의_최소공배수 {
                 a = temp;
             }
 
+            // 재귀를 사용한 방법
+            /*if (b != 0) {
+                return gcd(b, a % b);
+            }*/
+
             return a;
         }
 
