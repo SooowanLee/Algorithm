@@ -6,7 +6,7 @@ class Solution {
         int service = n / 10; 
         
         // 고기와 음료 가격을 계산 후 서비스 가격 빼기
-        answer = n * 12000 + k * 2000 - service * 2000;
+        answer = n * 12000 + (k - service) * 2000;
         
         return answer;
     }
